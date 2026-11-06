@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Little Kiln Candle Co. | Demo store by BITS of Tampa Bay</title>
+<meta name="description" content="A fictional demo store made by BITS of Tampa Bay to show its 30 Days of Store Content service. Nothing here is for sale.">
+<style>
+:root{--ink:#14282b;--pine:#1f4d45;--glass:#e8f0ee;--paper:#fbfdfc;--saffron:#e3a72f;--muted:#4b6165}
+*{box-sizing:border-box}
+body{margin:0;background:var(--glass);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--pine)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+.demo{background:var(--ink);color:#fff;text-align:center;padding:.6rem 1rem;font-size:.95rem}
+.demo strong{color:var(--saffron)}
+header,main,footer{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+header{display:flex;justify-content:space-between;align-items:center;padding-top:1.25rem;padding-bottom:1.25rem}
+.brand{font:700 1.35rem Georgia,"Iowan Old Style",serif;text-decoration:none;color:var(--ink)}
+nav a{margin-left:1.25rem;text-decoration:none;color:var(--ink)}
+nav a:hover{text-decoration:underline}
+.hero{padding:3rem 0 2.5rem;max-width:640px}
+h1{font:700 clamp(2.4rem,7vw,4.2rem)/1.05 Georgia,"Iowan Old Style",serif;margin:0 0 1rem;letter-spacing:-.02em}
+.hero p{font-size:1.15rem;color:var(--muted);margin:0 0 1.5rem;max-width:34em}
+.btn{display:inline-block;background:var(--pine);color:#fff;padding:.8rem 1.4rem;border-radius:4px;text-decoration:none;font-weight:600}
+.btn:hover{background:var(--ink)}
+h2{font:700 1.9rem Georgia,serif;margin:3rem 0 1.25rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+.card{background:var(--paper);border:1px solid #cfdcd9;border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.art{background:var(--c);padding:1.5rem 0 1rem;text-align:center}
+.art svg{width:120px;height:120px}
+.body{padding:1.1rem 1.25rem 1.4rem;display:flex;flex-direction:column;flex:1}
+.body h3{font:700 1.3rem Georgia,serif;margin:0}
+.notes{color:var(--muted);margin:.2rem 0 .7rem;font-size:.98rem}
+.price{font-weight:700;margin-top:auto}
+button{margin-top:.8rem;padding:.65rem 1rem;border:1px solid var(--pine);background:transparent;color:var(--pine);border-radius:4px;font:inherit;font-weight:600;cursor:not-allowed}
+.about{background:var(--paper);border-left:6px solid var(--saffron);padding:1.5rem 1.75rem;border-radius:0 6px 6px 0;max-width:720px}
+.about p{margin:0 0 .8rem}
+footer{padding-top:3rem;padding-bottom:3rem;color:var(--muted);font-size:.92rem}
+.offer{display:grid;grid-template-columns:1.4fr 1fr;gap:2rem;background:var(--ink);color:#fff;border-radius:6px;padding:2rem}
+.offer ul{margin:.5rem 0 0;padding-left:1.2rem}
+.offer li{margin:.3rem 0}
+.price-box{background:var(--paper);color:var(--ink);border-radius:6px;padding:1.5rem;align-self:start}
+.price-box p{margin:0 0 .6rem}
+.big{font:700 2.6rem Georgia,serif}
+.btn.alt{background:var(--saffron);color:var(--ink)}
+.btn.alt:hover{background:#f0b94a}
+@media(max-width:700px){.offer{grid-template-columns:1fr}}
+@media(max-width:560px){header{flex-direction:column;gap:.6rem}nav a{margin:0 .75rem}}
+</style>
+</head>
+<body>
+<div class="demo"><strong>Demo store.</strong> A sample site made by BITS of Tampa Bay to show our 30 Days of Store Content service. The shop is fictional and nothing here can be bought.</div>
+
+<header>
+  <a class="brand" href="#top">Little Kiln Candle Co.</a>
+  <nav aria-label="Main"><a href="#bestsellers">Bestsellers</a><a href="#about">Our story</a><a href="#offer">BITS offer</a></nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <h1>Candles poured in small batches.</h1>
+    <p>Soy wax, cotton wicks and scents named after Gulf Coast evenings. Every jar is poured, cured and labelled by hand in batches of forty.</p>
+    <a class="btn" href="#bestsellers">See the bestsellers</a>
+  </section>
+
+  <section id="bestsellers" aria-labelledby="bs">
+    <h2 id="bs">Bestsellers</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="art" style="--c:#f3d9a4"><svg viewBox="0 0 120 120" role="img" aria-label="Amber candle jar"><rect x="30" y="48" width="60" height="58" rx="8" fill="#b9741f"/><rect x="38" y="60" width="44" height="6" fill="#f3d9a4"/><path d="M60 22c9 10 7 18 0 20-7-2-9-10 0-20z" fill="#e3a72f"/><rect x="58.5" y="40" width="3" height="10" fill="#14282b"/></svg></div>
+        <div class="body"><h3>Porch Light</h3><p class="notes">Cedar, amber and warm vanilla. 8 oz, about 45 hours.</p><span class="price">$28</span><button type="button" disabled>Demo only</button></div>
+      </article>
+      <article class="card">
+        <div class="art" style="--c:#cfe3e6"><svg viewBox="0 0 120 120" role="img" aria-label="Sea-glass candle jar"><rect x="30" y="48" width="60" height="58" rx="8" fill="#3f7f86"/><rect x="38" y="60" width="44" height="6" fill="#cfe3e6"/><path d="M60 22c9 10 7 18 0 20-7-2-9-10 0-20z" fill="#e3a72f"/><rect x="58.5" y="40" width="3" height="10" fill="#14282b"/></svg></div>
+        <div class="body"><h3>Low Tide</h3><p class="notes">Sea salt, driftwood and white tea. 8 oz, about 45 hours.</p><span class="price">$28</span><button type="button" disabled>Demo only</button></div>
+      </article>
+      <article class="card">
+        <div class="art" style="--c:#f6e3c8"><svg viewBox="0 0 120 120" role="img" aria-label="Citrus candle jar"><rect x="30" y="48" width="60" height="58" rx="8" fill="#d4812a"/><rect x="38" y="60" width="44" height="6" fill="#f6e3c8"/><path d="M60 22c9 10 7 18 0 20-7-2-9-10 0-20z" fill="#e3a72f"/><rect x="58.5" y="40" width="3" height="10" fill="#14282b"/></svg></div>
+        <div class="body"><h3>Citrus Grove</h3><p class="notes">Orange blossom, bergamot and green leaf. 8 oz, about 45 hours.</p><span class="price">$28</span><button type="button" disabled>Demo only</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" aria-labelledby="ab">
+    <h2 id="ab">Our story</h2>
+    <div class="about">
+      <p>Little Kiln started on a kitchen table with one pot, one scent and a stack of mismatched jars. It is still a one-person shop, so every order gets a handwritten thank-you.</p>
+      <p>This store is a sample created for a content demonstration. The products, prices and story are made up.</p>
+    </div>
+  </section>
+  <section id="offer" aria-labelledby="of">
+    <h2 id="of">Want content like this for your store?</h2>
+    <div class="offer">
+      <div>
+        <p>Little Kiln is a sample. <strong>30 Days of Store Content</strong> is the service from BITS of Tampa Bay for e-commerce solopreneurs. This demo store and its sample posts show the kind of work you get.</p>
+        <ul>
+          <li>20 posts across social channels</li>
+          <li>8 short video edits from photos you already have</li>
+          <li>Captions, hashtags and a posting calendar</li>
+          <li>2 promo emails</li>
+          <li>One revision round</li>
+        </ul>
+      </div>
+      <div class="price-box">
+        <p class="big">$297</p>
+        <p>One payment up front. Delivered in 5 business days.</p>
+        <p>Keep it going for $197 a month.</p>
+        <a class="btn alt" href="https://www.bitsoftampabay.com/ContactUs">Talk to BITS</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <p><strong>Little Kiln Candle Co.</strong> is a fictional brand. This page and its sample posts were created by <a href="https://www.bitsoftampabay.com">BITS of Tampa Bay</a> to demonstrate 30 Days of Store Content. No orders, payments or personal details are collected here.</p>
+</footer>
+</body>
+</html>
